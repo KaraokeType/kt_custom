@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Cloned from https://github.com/memetrollsXD/kt_custom -->
+<head>
+  <title>KaraokeType Custom</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="icon" href="keyboardtrans.ico">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://karaoketype.com/custom">
+<meta property="og:description" content="Play Custom Song">
+<meta property="og:site_name" content="KaraokeType">
+
+<!-- Discord -->
+<meta name="theme-color" content="#4a4a4a">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <a href="#"><img src="karaoketype_banner.webp" class="logo"/></a>
+      <a href="https://github.com/memetrollsxd/kt_custom" class="header-link">GitHub</a>
+      <a href="https://github.com/memetrollsxd/kt_custom/wiki" class="header-link">Tutorial</a>
+      <a href="https://karaoketype.com/" class="header-link">Go Back</a>
+    </div>
+    <div id="bar">
+	<div class="percent">
+	</div>
+	<div id="circle">
+	</div>
+</div>
+    <div class="header">
+      <div class="errors">
+        <div class="header_text">Score</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Time</div>
+        <div class="curr_time">60s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">Accuracy</div>
+        <div class="curr_accuracy">100%</div>
+      </div>
+    </div>
+
+    <div class="quote">Click on the area below to start the game.</div>
+    <div class="quote_f"></div>
+    <!-- Text screen -->
+    <textarea class="input_area step3" placeholder="start typing here..."
+      autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-gramm="false"
+      rows="1"></textarea>
+      <!-- Step 1 -->
+      <br class="load_btn">
+      <label for="jsonu" class="load_btn step1">Upload JSON</label>
+      <input type="file" id="jsonu" style="visibility:hidden;" accept=".json" />
+      <!-- Step 2 -->
+      <label for="jsonmp3" class="load_btn step2">Upload MP3</label>
+      <input type="file" id="jsonmp3" style="visibility:hidden;" accept=".mp3" />
+
+    <!-- End o' drama -->
+    <button class="btm_btn" title="Back to Menu (CTRL + SHIFT + J)">Back to Menu</button><br>
+    <button class="restart_btn" title="Try Again (CTRL + SHIFT + K)">Try Again</button><br>
+  </div>
+    <img src="err.png" class="overlay" id="err_overlay" draggable="false"/>
+    <footer>
+    <div id="player">
+      <div id="audio"></div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <input class="volume_button" type="range" min="0" max="100" value="100" id="volume_button">
+    </footer>
+  </div>
+  <script src="game.js" defer></script>
+</body>
+
+</html>
