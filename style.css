@@ -158,6 +158,18 @@ body {
   position: relative;
 }
 
+.load_btn {
+  background-color: #008d6a;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  color: white;
+  box-shadow: black 5px 8px 5px;
+  z-index: 1;
+  font-family: system-ui;
+  position: relative;
+}
+
 textarea {
   resize: none;
   white-space: nowrap;
@@ -417,4 +429,8 @@ body::-webkit-scrollbar-thumb
   margin-left: -7px;
   margin-right: -5px;
   margin-bottom: -6px;
+}
+
+.step2, .step3 {
+  display: none;
 }
