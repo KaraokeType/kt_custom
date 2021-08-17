@@ -42,11 +42,7 @@ body {
   align-items: center;
 }
 
-.timer,
-.errors,
-.accuracy,
-.cpm,
-.wpm {
+.timer, .errors, .accuracy, .cpm, .wpm {
   background-color: #3a3a3a;
   height: 60px;
   width: 110px;
@@ -58,7 +54,7 @@ body {
   font-family: system-ui;
 }
 
-.cpm {
+.cpm, .wpm {
   display: none;
 }
 
@@ -68,12 +64,8 @@ body {
   font-weight: 600;
 }
 
-.curr_time,
-.curr_errors,
-.curr_accuracy,
-.curr_cpm,
-.curr_wpm {
-  font-size: 1vw;
+.curr_time, .curr_errors, .curr_accuracy, .curr_cpm, .curr_wpm {
+  font-size: 2.75rem;
 }
 
 .quote {
@@ -86,10 +78,10 @@ body {
   font-family: system-ui;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .quote_f {
@@ -103,14 +95,13 @@ body {
   font-family: system-ui;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.quote_copy {
-  /* For import/ */
+.quote_copy { /* For import/ */
   background-color: #3a3a3a;
   font-size: 1.5rem;
   margin: 10px;
@@ -185,38 +176,38 @@ footer {
 }
 
 div#player {
-  width: 99vw;
-  height: auto; /* Old value: 15vw */
-  background: #4a4a4a;
-  margin: 20vh auto 0px auto;
-  display: block;
+	width: 99vw;
+	height: auto; /* Old value: 15vw */
+	background: #4a4a4a;
+	margin: 20vh auto 0px auto;
+	display: block;
 }
 
 .fade-in {
-  animation: fadeIn 0.3s;
-  opacity: 1;
+	animation: fadeIn 0.3s;
+  	opacity: 1;
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
+  	opacity: 0;
   }
   to {
-    opacity: 1;
+ 	opacity: 1;
   }
 }
 
 .fade-out {
   animation: fadeOut 0.3s;
-  opacity: 1;
+  	opacity: 1;
 }
 
 @keyframes fadeOut {
   from {
-    opacity: 1;
+  	opacity: 1;
   }
   to {
-    opacity: 0;
+ 	opacity: 0;
   }
 }
 
@@ -235,67 +226,66 @@ div#player {
 
 /* Progress Bar */
 #bar {
-  float: left;
-  clear: both;
-  width: 100%;
-  height: 40px;
-  position: relative;
+	float: left;
+	clear: both;
+	width: 100%;
+	height: 40px;
+	position: relative;
 }
-
+  
 #bar .percent {
-  background: #3a3a3a;
-  float: left;
-  width: 100%;
-  height: 20px;
+	background: #3a3a3a;
+	float: left;
+	width: 100%;
+	height: 20px;
   position: relative;
   left: -3px;
   top: 3px;
   border-radius: 25px;
 }
-
+  
 #bar #circle {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 3%;
-  z-index: 3;
-  margin: -17px 0 0 -50px;
-  width: 50px;
-  height: 20px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 20px;
-  font-family: "PT Sans Narrow", sans-serif;
-  color: #5a5a5a;
-  background: #fff;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 3%;
+	z-index: 3;
+	margin: -17px 0 0 -50px;
+	width: 50px;
+	height: 20px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: #5a5a5a;
+	background: #fff;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
   transition: all 1s ease;
   border-radius: 25px;
 }
-
+  
 .bar .circle.rotate {
-  -webkit-transform: rotate(1080deg);
-  -moz-transform: rotate(1080deg);
-  -o-transform: rotate(1080deg);
-  transform: rotate(1080deg);
+	-webkit-transform:rotate(1080deg);
+	-moz-transform:rotate(1080deg);
+	-o-transform:rotate(1080deg);
+	transform:rotate(1080deg);
 }
-
+  
 #bar #circle span {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  background: rgba(0, 0, 0, 0.3);
-  -moz-border-radius: 35px;
-  -webkit-border-radius: 35px;
-  border-radius: 35px;
+	display:inline-block;
+	width:70px;
+	height:70px;
+	line-height:70px;
+	background:rgba(0, 0, 0, .3);
+	-moz-border-radius:35px;
+	-webkit-border-radius:35px;
+	border-radius:35px;
 }
 
 .fav_btn {
-  height: 10px;
-  width: 10px;
+  height: 10px; width: 10px;
   padding: 0px;
   margin: 0px;
   color: yellow !important;
@@ -316,95 +306,115 @@ div#player {
   color: yellow;
   text-decoration: underline;
 }
-/* Fix starts from here */
-.invisible {
-  display: none;
-}
-span {
+
+.leaderboard {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
   font-family: system-ui;
 }
-.footer {
-  background-color: #3a3a3a;
+
+table {
+  /* position relative to include a band on the left of the container */
+  margin: 0rem 1rem;
+  position: relative;
+  /* cap the width of the table, allowing for a sizeable portion of white space if allowed by the viewport */
+  width: calc(90vw - 2rem);
+  max-width: 800px;
+  /* spacing to separate the table rows vertically */
+  border-spacing: 0 1rem;
+}
+/* with a pseudo element add a band with a repeating linear gradient */
+/* center every element nested in a table row */
+table tr > * {
+  text-align: center;
+  padding: 0.5rem;
+}
+/* align every second item of each row to the left */
+table tr > *:nth-child(2) {
+  text-align: left;
 }
 
-.footer span,
-.footer a {
-  font-size: 2vw;
+
+/* style the headings to have thin uppercase titles for the columns */
+table th {
+  font-weight: 300;
+  letter-spacing: 0.04rem;
+  font-size: 0.9rem;
+  color: #eee;
+  text-transform: uppercase;
 }
 
-.shortcut_btn {
-  float: right;
-  color: white;
+/* slightly increase the weight of the cell describing the position */
+table td.position {
+  font-weight: 500;
 }
 
-.shortcut_btn_l {
-  float: left;
-  color: white;
+/* style the cell with the driver visually separating the first, last name and team */
+table td.driver {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+}
+table td.driver strong {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+table td.driver span {
+  text-transform: capitalize;
+  margin-left: 0.75rem;
+  font-size: 0.8rem;
+  color: #999;
+  letter-spacing: initial;
 }
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 5; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+/* style the span nested in the last cell to have the gap in a rounded rectangle */
+table td.gap span {
+  background: #38383F;
+  border-radius: 30px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #4a4a4a;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  border-radius: 10px;
-  color: white;
-  font-family: system-ui;
-  font-size: large;
+/* on smaller viewports remove the third column from sight */
+@media (max-width: 500px) {
+  table tr > *:nth-child(3) {
+    display: none;
+  }
 }
 
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+/* Scrollbar */
+
+body::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #4a4a4a;
 }
 
-.close:hover,
-.close:focus {
-  color: #aaa;
-  text-decoration: none;
-  cursor: pointer;
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #4a4a4a;
 }
 
-.yellow {
- color: yellow;   
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #2a2a2a;
 }
 
-.category_sel {
-    background-color: #2a2a2a;
-    height: 30px;
-    width: 40%;
-    border-radius: 15px;
+.volume_button {
+  position:absolute; bottom:5px; right:-50px;
+  background:#00ffc1;
+  -webkit-appearance: slider-vertical;
 }
 
-.category_btn {
-    background-color: #3a3a3a;
-    color: white;
-    font-family: system-ui;
-    border: none;
-    margin: 3px;
-    border-radius: 10px;
-    font-size: large;
-}
-
-.btn_selected {
-    background-color: #008d6a;
-    outline: none;
+.ktypepro {
+  height: 25px;
+  width: 25px;
+  margin-left: -7px;
+  margin-right: -5px;
+  margin-bottom: -6px;
 }
